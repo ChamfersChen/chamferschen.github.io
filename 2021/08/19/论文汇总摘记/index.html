@@ -18,9 +18,25 @@
   <meta name="author" content="Chamfers Chen">
   <meta name="keywords" content="">
   
-  <title>归档 - Welcom to Chamfers&#39; Blog</title>
+  <title>论文汇总摘记 - Welcom to Chamfers&#39; Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,9 +163,46 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="论文汇总摘记">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-19 20:13" pubdate>
+        2021年8月19日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      478 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      6
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -162,58 +215,124 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 5 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/11/19/Java%E7%AC%94%E8%AE%B0/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Java笔记</span>
-      <time style="float: right;">11-19</time>
-    </a>
-  
-    
-    <a href="/2020/11/13/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Java编程思想</span>
-      <time style="float: right;">11-13</time>
-    </a>
-  
-    
-    <a href="/2020/10/05/PyTorch-Image-Classification/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">PyTorch Image Classification</span>
-      <time style="float: right;">10-05</time>
-    </a>
-  
-    
-    <a href="/2020/10/03/what-is-pytorch/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">What&#39;s_PyTorch</span>
-      <time style="float: right;">10-03</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">论文汇总摘记</h1>
+            
+            <div class="markdown-body">
+              <h3 id="论文汇总摘记"><a href="#论文汇总摘记" class="headerlink" title="论文汇总摘记"></a>论文汇总摘记</h3><h5 id="Local-Aggregation-for-Unsupervised-Learning-of-Visual-Embeddings"><a href="#Local-Aggregation-for-Unsupervised-Learning-of-Visual-Embeddings" class="headerlink" title="Local Aggregation for Unsupervised Learning of Visual Embeddings"></a>Local Aggregation for Unsupervised Learning of Visual Embeddings</h5><blockquote>
+<p><strong>发现</strong>：三个月大的婴儿能够将感知上相似的刺激归为一类，甚至是从未见过的刺激类型</p>
+<p>researchers reliably report that infants as young as three months can group perceptually similar stimuli [46], even for stimulus types that the infants have never seen before. </p>
+<p><strong>动机</strong>：生物的无监督学习可能会从==固有的视觉相似性==中获益，不需要刺激类别之间明确的界限。</p>
+<p>These findings suggest that biological unsupervised learning may take advantage of ==inherent visual similarity==, <strong>without requiring sharp boundaries between stimulus categories</strong>.</p>
+<p><strong>方法创新</strong>：训练一个嵌入函数（网络）去最大化<u>动态的</u>（软聚类）局部软聚类度量（local soft-clustering metric）</p>
+</blockquote>
+<ul>
+<li>相关工作<ul>
+<li>DeepCluster</li>
+<li>Instance Recognition.</li>
+<li>Self-supervised “missing-data” tasks.</li>
+<li>Generative models.</li>
+</ul>
+</li>
+</ul>
+<h5 id="Unsupervised-Embedding-Learning-via-Invariant-and-Spreading-Instance-Feature"><a href="#Unsupervised-Embedding-Learning-via-Invariant-and-Spreading-Instance-Feature" class="headerlink" title="Unsupervised Embedding Learning via Invariant and Spreading Instance Feature"></a>Unsupervised Embedding Learning via Invariant and Spreading Instance Feature</h5><blockquote>
+<p><strong>动机：</strong>从类级别的监督学习中观察到，正样本相互集中，负样本离散的性质</p>
+<p>Motivated by the positive concentrated and negative separated properties observed from category-wise su- pervised learning,</p>
+<p><strong>方法创新：</strong>我们建议利用实例监督来近似这些属性，旨在学习数据增强不变性和实例展开特征。</p>
+<p>we propose to utilize the instance-wise supervision to approximate these properties, which aims at learning data augmentation invariant and instance spread- out features.</p>
+</blockquote>
+<ul>
+<li>相关工作<ul>
+<li>General Unsupervised Feature Learning</li>
+<li>Deep Embedding Learning.</li>
+<li>Unsupervised Embedding Learning.</li>
+</ul>
+</li>
+</ul>
+<h5 id="Propagate-Yourself-Exploring-Pixel-Level-Consistency-for-Unsupervised-Visual-Representation-Learning"><a href="#Propagate-Yourself-Exploring-Pixel-Level-Consistency-for-Unsupervised-Visual-Representation-Learning" class="headerlink" title="Propagate Yourself: Exploring Pixel-Level Consistency for Unsupervised Visual Representation Learning"></a>Propagate Yourself: Exploring Pixel-Level Consistency for Unsupervised Visual Representation Learning</h5><blockquote>
+<p><strong>动机：</strong>我们指出，对比学习的能力还没有被完全激发，因为现在的方法仅仅是在实例级别上设置辅助任务，从而导致在需要密集的像素预测的下游任务中学习到次优的表征。</p>
+<p>We argue that the power of contrastive learning has yet to be fully unleashed, as current methods are trained only on instance-level pretext tasks, leading to representations that may be sub-optimal for downstream tasks requiring dense pixel predictions</p>
+<p><strong>方法创新：</strong>为学习密集的特征表示我们应用像素级别的辅助任务</p>
+<p>we introduce pixel-level pretext tasks for learning dense feature representations</p>
+</blockquote>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E8%AE%BA%E6%96%87%E5%AD%A6%E4%B9%A0/">论文学习</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AE%BA%E6%96%87/">论文</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/11/19/Java%E7%AC%94%E8%AE%B0/">
+                        <span class="hidden-mobile">Java笔记</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -293,9 +412,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
