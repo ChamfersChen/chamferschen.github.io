@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      478 字
+      922 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      13
        分钟
     </span>
   
@@ -263,6 +263,39 @@
 <p>We argue that the power of contrastive learning has yet to be fully unleashed, as current methods are trained only on instance-level pretext tasks, leading to representations that may be sub-optimal for downstream tasks requiring dense pixel predictions</p>
 <p><strong>方法创新：</strong>为学习密集的特征表示我们应用像素级别的辅助任务</p>
 <p>we introduce pixel-level pretext tasks for learning dense feature representations</p>
+</blockquote>
+<ul>
+<li>相关工作<ul>
+<li>Instance discrimination</li>
+<li>Other pretext tasks using a single image</li>
+<li>Pixel-level self-supervised learning in videos or multi- images</li>
+<li>Concurrent/follow-on works of pixel-level learning us- ing a single image</li>
+</ul>
+</li>
+</ul>
+<h5 id="Unsupervised-Feature-Learning-via-Non-Parametric-Instance-Discrimination"><a href="#Unsupervised-Feature-Learning-via-Non-Parametric-Instance-Discrimination" class="headerlink" title="Unsupervised Feature Learning via Non-Parametric Instance Discrimination"></a>Unsupervised Feature Learning via Non-Parametric Instance Discrimination</h5><blockquote>
+<p><strong>发现：</strong>在带有注释类标签的数据上训练的神经网络分类器也可以在没有被指导的情况下捕获类别之间的明显视觉相似性。</p>
+<p>Neural net classifiers trained on data with annotated class labels can also capture apparent visual similarity among categories without being directed to do so.</p>
+<p><strong>动机：</strong>我们能否仅仅通过要求特征区分单个实例来学习一个很好的特征表示，它可以捕获实例之间的明显相似性，而不是类之间？</p>
+<p>Can we learn a good feature representation that captures apparent similar- ity among instances, instead of classes, by merely asking the feature to be discriminative of individual instances?</p>
+<p><strong>方法：</strong>我们将这种直觉表述为实例级别的非参数分类问题，并使用噪声对比估计来解决大量实例类带来的计算上的挑战。</p>
+<p>We formulate this intuition as a non-parametric classification problem at the instance-level, and use noise-contrastive estimation to tackle the computational challenges imposed by the large number of instance classes.</p>
+</blockquote>
+<ul>
+<li>相关工作<ul>
+<li>Generative Models.</li>
+<li>Self-supervised Learning.</li>
+<li>Metric Learning.</li>
+<li>Exemplar CNN.</li>
+</ul>
+</li>
+</ul>
+<h5 id="What-Makes-for-Good-Views-for-Contrastive-Learning"><a href="#What-Makes-for-Good-Views-for-Contrastive-Learning" class="headerlink" title="What Makes for Good Views for Contrastive Learning?"></a>What Makes for Good Views for Contrastive Learning?</h5><blockquote>
+<p>==<strong>核心内容</strong>：互信息不是越多越好，要掌握一个度==</p>
+<p><strong>指出</strong>：认为我们应该减少视图之间的互信息 (MI)，同时保持与任务相关的信息完整</p>
+<p>argue that we should reduce the mutual information (MI) between views while keeping task-relevant information intact</p>
+<p>我们还将数据增强视为减少 MI 的一种方法，并表明增加数据增强确实会导致 MI 降低并提高下游分类精度。</p>
+<p>We also consider data augmenta- tion as a way to reduce MI, and show that increasing data augmentation indeed leads to decreasing MI and improves downstream classification accuracy.</p>
 </blockquote>
 
             </div>
